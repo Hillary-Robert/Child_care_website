@@ -14,6 +14,7 @@
   <header>
 
     <nav>
+    
       <div>
         <a href="index.html"><img src="./images/logo_colored.png" alt=""></a>
       </div>
@@ -21,19 +22,24 @@
       <div>
 
         <ul>
-          <li><a href="">Parents</a></li>
-          <li><a href="referrals.html">Referrals</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="careers.html">Careers</a></li>
+          <li><a href="teams.html">Team</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="register.html">Register</a></li>
         </ul>
 
       </div>
 
-      <div>
+      <div class="nav-contact">
         <p>+35871789390</p>
-        <button>Get started</button>
-
+        <button class="nav-button">Get started</button>
       </div>
+
+      <div class="hamburger" id="hamburger-icon">
+        &#9776; 
+      </div>
+      
     </nav>
 
   </header>
@@ -207,27 +213,55 @@
 
 
 
-    <section>
+    <div class="click-container"> 
+      <h4 id="click">Click the arrow below to contact us</h4>
+    </div>
+    
+    <div class="contact-line-container">
+      <hr class="contact-line">
+      <i class="fa-solid fa-chevron-up" id="arrow"></i>
+      <i class="fa-solid fa-chevron-down" id="arrow-down"></i>
+      <hr class="contact-line">
+    </div>
 
-      <h2>Contact us</h2>
+    
 
-      <p>You can send us an email for more Inquiries</p>
 
-      <form>
+    
 
-        <div>
-          <label for="name" class="required">Name</label>
-          <input type="text" placeholder="Enter your full name" name="name" required>
+
+    <section class="contact-section">
+
+      <div id="contact-section">
+
+        <div  class="contact-section-text">
+
+          <h2>Contact us</h2>
+
+          <p>You can send us an email for more Inquiries</p>
+
         </div>
 
-        <div>
-          <label for="email" class="required">Email</label>
-          <input type="email" placeholder="Enter your Email address" name="email" required>
-        </div>
 
-        <div>
-          <label for="message" class="required">Message</label>
-          <textarea name="message" id="message" placeholder="message"></textarea>
+        <form>
+
+          <div class="form-div">
+            <label for="name" class="required">Name</label>
+            <input type="text" placeholder="Enter your full name" name="name" required>
+          </div>
+
+          <div class="form-div">
+            <label for="email" class="required">Email</label>
+            <input type="email" placeholder="Enter your Email address" name="email" required>
+          </div>
+
+          <div class="form-div">
+            <label for="message" class="required">Message</label>
+            <textarea name="message" id="message" placeholder="message"></textarea>
+          </div>
+
+          <button class="contact-button">Send</button>
+
         </div>
 
 
@@ -238,26 +272,25 @@
     </section>
 
 
-
   </main>
 
 
 
-
-
-
-
-  <!-- Footer -->
+<!-- Footer -->
 
   <footer>
 
-    <img src="images/Rectangle yellow.png" alt="" height="72px" width="72px">
-
     <div>
 
-      <img src="./images/logo white.png" alt="">
+      <img src="images/Rectangle yellow.png" alt="" height="72px" width="72px" class="footer-rectangle">
 
-      <div>
+    </div>
+
+    <div class="first-column">
+
+      <img src="./images/logo_colored.png" alt="" class="logo">
+
+      <div class="icon-container">
 
         <div>
           <i class="fa-solid fa-house"></i>
@@ -266,25 +299,27 @@
 
 
         <div>
-          <i class="fa-solid fa-phone"></i>
-          <p>23 Petkelkuja sstreet, Abidoye lane, Fl, Finland</p>
+          <i class="fa-solid fa-phone" id="arrow"></i>
+          <p>358-789368-684</p>
         </div>
 
 
         <div>
           <i class="fa-solid fa-envelope"></i>
-          <p>23 Petkelkuja sstreet, Abidoye lane, Fl, Finland</p>
+          <p>hillaryrober@gmail.com</p>
         </div>
 
       </div>
 
     </div>
 
+    <hr class="line">
 
 
-    <div>
 
-      <div>
+    <div >
+
+      <div class="social">
 
         <i class="fa-brands fa-facebook"></i>
 
@@ -296,12 +331,15 @@
 
       </div>
 
-      <p>&copy; Copyrights @2024 | Hillary </p>
+      <p class="copy">&copy; Copyrights @2024 | Hillary </p>
 
     </div>
 
 
   </footer>
-  
+
+
+
+  <script src="childcare.js"></script>
 </body>
 </html>

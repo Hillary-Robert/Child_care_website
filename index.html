@@ -15,6 +15,7 @@
   <header>
 
     <nav>
+      
       <div>
         <a href="index.html"><img src="./images/logo_colored.png" alt=""></a>
       </div>
@@ -22,6 +23,7 @@
       <div>
 
         <ul>
+          <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="teams.html">Team</a></li>
           <li><a href="services.html">Services</a></li>
@@ -33,6 +35,10 @@
       <div class="nav-contact">
         <p>+35871789390</p>
         <button class="nav-button">Get started</button>
+      </div>
+
+      <div class="hamburger" id="hamburger-icon">
+        &#9776; 
       </div>
       
     </nav>
@@ -160,30 +166,56 @@
     </section>
 
 
+    <div class="click-container"> 
+      <h4 id="click">Click the arrow below to contact us</h4>
+    </div>
+    
+    <div class="contact-line-container">
+      <hr class="contact-line">
+      <i class="fa-solid fa-chevron-up" id="arrow"></i>
+      <i class="fa-solid fa-chevron-down" id="arrow-down"></i>
+      <hr class="contact-line">
+    </div>
+
+    
+
+
+    
+
+
     <section class="contact-section">
 
-      <h2>Contact us</h2>
+      <div id="contact-section">
 
-      <p>You can send us an email for more Inquiries</p>
+        <div  class="contact-section-text">
 
-      <form>
+          <h2>Contact us</h2>
 
-        <div class="form-div">
-          <label for="name" class="required">Name</label>
-          <input type="text" placeholder="Enter your full name" name="name" required>
+          <p>You can send us an email for more Inquiries</p>
+
         </div>
 
-        <div class="form-div">
-          <label for="email" class="required">Email</label>
-          <input type="email" placeholder="Enter your Email address" name="email" required>
-        </div>
 
-        <div class="form-div">
-          <label for="message" class="required">Message</label>
-          <textarea name="message" id="message" placeholder="message"></textarea>
-        </div>
+        <form>
 
-        <button class="contact-button">Send</button>
+          <div class="form-div">
+            <label for="name" class="required">Name</label>
+            <input type="text" placeholder="Enter your full name" name="name" required>
+          </div>
+
+          <div class="form-div">
+            <label for="email" class="required">Email</label>
+            <input type="email" placeholder="Enter your Email address" name="email" required>
+          </div>
+
+          <div class="form-div">
+            <label for="message" class="required">Message</label>
+            <textarea name="message" id="message" placeholder="message"></textarea>
+          </div>
+
+          <button class="contact-button">Send</button>
+
+        </div>
 
 
 
@@ -209,7 +241,7 @@
 
     <div class="first-column">
 
-      <img src="./images/logo white.png" alt="" class="logo">
+      <img src="./images/logo_colored.png" alt="" class="logo">
 
       <div class="icon-container">
 
@@ -220,7 +252,7 @@
 
 
         <div>
-          <i class="fa-solid fa-phone"></i>
+          <i class="fa-solid fa-phone" id="arrow"></i>
           <p>358-789368-684</p>
         </div>
 
@@ -261,6 +293,6 @@
 
 
 
-  
+  <script src="childcare.js"></script>
 </body>
 </html>

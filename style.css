@@ -5,7 +5,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'poppins';
+  font-family: 'poppins', sans-serif;
+}
+
+body{
+  overflow-x: hidden;
 }
 
 
@@ -25,7 +29,8 @@ header nav{
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  margin-top: 1rem
+  margin-top: 1rem;
+  padding: 0 6rem;
 }
 
 nav img{
@@ -68,7 +73,7 @@ li {
   height: auto;
   display: flex;
   flex-direction: row;
-  column-gap: 1rem;
+  column-gap: 1.5rem;
   align-items: center;
   text-align: center;
 }
@@ -83,10 +88,10 @@ li {
 .nav-button{
   width: fit-content;;
   font-size: 1.2rem;
-  padding: 0.5rem 1.2rem;
+  padding: 0.5rem 2rem;
   background-color: transparent;
   border: 2px solid #8f36ff;
-  border-radius: 1.5rem;
+  border-radius: 1rem;
   color: #8f36ff;
   cursor: pointer;
 }
@@ -95,6 +100,13 @@ li {
 .nav-button:hover{
   background-color: #8f36ff;
   color: white;
+}
+
+
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
 }
 
 
@@ -123,24 +135,33 @@ li {
   row-gap: 2rem;
 }
 
+
 .title-text h1{
   font-size: 3rem;
   line-height: 2;
 }
 
+
 .title-button{
   width: fit-content;;
   font-size: 1.2rem;
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem 2rem;
   background-color: transparent;
   border: 2px solid white;
-  border-radius: 1.5rem;
+  border-radius: 1rem;
   color: white;
   margin-top: 4rem;
   cursor: pointer;
-  
-
 }
+
+
+
+.title-button:hover{
+  background-color: white;
+  color: #8f36ff;
+  
+}
+
 
 
 .title-green{
@@ -149,8 +170,8 @@ li {
   left: -2rem;
   top: -1rem;
   
-
 }
+
 
 
 .title-yellow{
@@ -291,7 +312,7 @@ li {
 
 /* Family section */
 
-.family-section{
+.family-section, .team-section{
 
   width: 100%;
   height: auto;
@@ -334,7 +355,7 @@ li {
 }
 
 
-.family{
+.family, .team{
   width: 100%;
   height: auto;
   display: flex;
@@ -355,8 +376,8 @@ li {
   
   margin-bottom: 6rem;
   
-  
 }
+
 
 .family img{
   width: 250px;
@@ -364,9 +385,11 @@ li {
   
 }
 
+
+
 .image-container p{
-  padding: 2rem;
-  font-size: 1.5rem;
+  padding: 1rem;
+  font-size: 1rem;
   
 }
 
@@ -393,14 +416,40 @@ li {
   justify-content: center;
   align-items: center;
   text-align: start;
-  padding: 4rem 0;
+  margin-bottom: 2rem;
+  
 }
+
+#contact-section{
+  width: 100%;
+  height: auto;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+  padding: 4rem 0;
+  
+}
+
+.contact-section-text{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 
 
 .contact-section h2{
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
 }
+
+
 
 form{
   width: 100%;
@@ -430,10 +479,11 @@ form{
 
 input{
   width: 100%;
-  padding: 10px;
+  padding: 20px 10px;
   border-radius: 0.5rem;
   box-sizing: border-box;
-  border: 2px solid #8f36ff;
+  border: 2px solid #bbbbbb;
+  background-color: #fbfbfb;
   
 }
 
@@ -443,8 +493,11 @@ textarea{
   padding: 10px 10px 60px 10px;
   border-radius: 0.5rem;
   box-sizing: border-box;
-  border: 2px solid #8f36ff;
+  border: 2px solid #bbbbbb;
+  background-color: #fbfbfb;
 }
+
+
 
 
 
@@ -464,6 +517,52 @@ textarea{
 .contact-button:hover{
   background-color: transparent;
   color: #8f36ff;
+}
+
+.contact-line-container{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+
+.contact-line-container i{
+  width: 8%;
+  font-size: 2rem;
+  text-align: center;
+
+}
+
+#arrow-down{
+  display: none;
+}
+
+
+.contact-line{
+  border: none; 
+  border-top: 1px solid #5F6973;
+  margin: 4rem 0 4rem 0; 
+  width: 45%; 
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+
+
+.click-container h4{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 4rem;
+ 
 }
 
 
@@ -562,6 +661,276 @@ footer .logo{
 
 
 
+/* About me page */
+
+.about-header-section, .team-header-section, .register-header-section{
+  width: 100%;
+  background-color: #8f36ff;
+  padding: 6rem 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 2rem 0;
+
+}
+
+.about-green-polygon, .team-green-polygon, .register-green-polygon{
+  position: absolute;
+  top: 0;
+  right: -1rem;
+  width: 8rem;
+  transform: rotate(180deg);
+}
+
+
+.about-title, .team-title, .register-title{
+
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  row-gap: 3rem;
+  color: white;
+  padding: 4rem;
+
+}
+
+
+/* about main */
+
+
+.about-main{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+
+}
+
+
+
+.about-container{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20rem;
+  margin-top: 1rem;
+  padding: 2rem 6rem;
+  z-index: -6;
+
+}
+
+
+.third{
+  width: 400px;
+  height: auto;
+  position: relative;
+  padding: 2rem 0;
+}
+
+
+.third img{
+  width: 400px;
+  height: auto;
+
+}
+
+#about-first{
+  width: 200px;
+  position: absolute;
+  top: 50%;
+  left: -2rem;
+  z-index: -1;
+}
+
+
+
+
+#about-second{
+  width: 200px;
+  position: absolute;
+  left: 75%;
+  top: 45%;
+  transform: rotate(180deg);
+  z-index: -1;
+
+}
+
+
+
+
+#about-third{
+
+  width: 200px;
+  position: absolute;
+  top: 3%;
+  right: -0.8rem;
+  z-index: -1;
+
+}
+
+
+
+.about-text{
+  width: 40%;
+  height: auto;
+}
+
+
+.about-text{
+  width: 40%;
+  height: auto;
+}
+ .about-text h2{
+  color: #8f36ff;
+  margin-bottom: 3rem;
+
+ }
+
+
+
+ /* Stying Services Page */
+
+
+
+
+ .team img{
+  width: 250px;
+  height: auto;
+  
+}
+
+
+.team h6{
+  margin-top: 1rem;
+  font-size: 1.2rem;
+
+}
+
+
+.team-container{
+  background-color: #f6f6f6;
+  width: 100%;
+  padding: 10rem 6rem;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -4rem;
+  
+  
+}
+
+
+
+.team-conts{
+  width: 100%;
+  position: relative;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+
+.team-image{
+  width: 50%;
+  position: absolute;
+  height: 95%;
+  top: 10%;
+  right: 28%;
+  
+  
+}
+
+
+.team-image img{
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+
+
+.team-image-paragraph{
+  background-color: white;
+  border: 1px solid #3d9ffa;
+  width: 50%;
+  height: auto;
+  padding: 6rem 3rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 7;
+  color: black;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+
+}
+
+
+.team-image-paragraph p{
+  line-height: 2;
+}
+
+
+
+
+/* Register Page */
+
+.register-blue-line{
+  position: absolute;
+  left: -3rem;
+  bottom: -1rem;
+
+  width: 24rem;
+  border-radius: 1rem;
+}
+
+
+.register-field{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6rem;
+}
+
+.register-field p{
+  text-align: center;
+  padding: 0 30%;
+  margin: 2rem 0 0 0;
+}
+
+.checkboxes{
+  margin: 2rem 0;
+}
+
+.checkboxes label{
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  column-gap: 1rem;
+}
 
 
 

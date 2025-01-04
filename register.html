@@ -16,6 +16,7 @@
   <header>
 
     <nav>
+    
       <div>
         <a href="index.html"><img src="./images/logo_colored.png" alt=""></a>
       </div>
@@ -23,36 +24,41 @@
       <div>
 
         <ul>
-          <li><a href="">Parents</a></li>
-          <li><a href="referrals.html">Referrals</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="careers.html">Careers</a></li>
+          <li><a href="teams.html">Team</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="register.html">Register</a></li>
         </ul>
 
       </div>
 
-      <div>
+      <div class="nav-contact">
         <p>+35871789390</p>
-        <button>Get started</button>
-
+        <button class="nav-button">Get started</button>
       </div>
+
+      <div class="hamburger" id="hamburger-icon">
+        &#9776; 
+      </div>
+      
     </nav>
 
-    <section>
-
+    <section class="register-header-section">
       <div>
-        <img src="images/Polygon 6.png" alt="">
+        <img src="images/Polygon green.png" alt="" class="register-green-polygon">
+      </div>
+      
+      <div class="register-title">
+
+        <h1 style="font-size: 3rem;">Our Team</h1>
+
+        <p>We are experts in both providing the best ABA therapy services and how to access our services through your insurance provider. We have over twenty years of experience in assisting our client's families in navigating the system to provide the therapy services to help your child. At ABA Home Therapy, our team works with each family to guide them through the process to ensure that your child receives the services and support that they need to succeed today and in their future.</p>
       </div>
 
+
       <div>
-
-        <div>
-
-          <h1>Our Team</h1>
-
-          <p>We are experts in both providing the best ABA therapy services and how to access our services through your insurance provider. We have over twenty years of experience in assisting our client's families in navigating the system to provide the therapy services to help your child. At ABA Home Therapy, our team works with each family to guide them through the process to ensure that your child receives the services and support that they need to succeed today and in their future.</p>
-        </div>
-
+        <img src="images/Rectangle line blue.png" alt="" class="register-blue-line">
       </div>
 
     </section>
@@ -70,105 +76,100 @@
      <!-- Get started form -->
 
 
-    <section>
+    <section class="register-field">
 
       <h2>Get Started Today!</h2>
 
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil libero quas eum veniam quaerat nostrum iste reiciendis, labore cum architecto?</p>
+
       <form>
-        <div>
+        <div class="form-div">
           <label for="name" class="required">Name</label>
           <input type="text" id="name" name="name" placeholder="Your full name" required>
         </div>
 
-        <div>
+        <div class="form-div">
           <label for="relationships" class="required">What is your relationship to the child</label>
           <input type="text" id="relationships" name="relationships" placeholder="Parent, Guardian, Caretaker" required>
         </div>
 
-        <div>
+        <div class="form-div">
           <label for="number" class="required">Phone Number</label>
           <input type="tel" id="number" name="number" placeholder="Enter your phone number" required>
         </div>
 
-        <div>
+        <div class="form-div">
           <label for="email" class="required">Email</label>
           <input type="email" id="email" name="email" placeholder="Your email" required>
         </div>
 
-        <div>
+        <div class="checkboxes form-div">
           <h5>Preferred Method of Contact</h5>
-          <input type="checkbox" id="phone_options" name="phone_options">
-          <label>Phone call</label>
+          <label><input type="checkbox" id="phone_options" name="phone_options">Phone</label>
+        
+          <label><input type="checkbox" id="phone_options" name="phone_options">Email</label>
 
-          <input type="checkbox" id="email_options" name="email_options">
-          <label>Email</label>
+          <label><input type="checkbox" id="phone_options" name="phone_options">Text</label>
 
-          <input type="checkbox" id="text_options" name="text_options">
-          <label>Text Messages</label>
+          <label><input type="checkbox" id="phone_options" name="phone_options">Whatsapp</label>
 
-          <input type="checkbox" id="whatsapp_options" name="whatsapp_options">
-          <label>whatsapp</label>
         </div>
 
-
-        <div>
+        <div class="form-div">
           <label for="address" class="required">Address</label>
           <input type="address" id="address" name="address" placeholder="Street Address" required>
         </div>
 
 
-        <div>
-          <label for="address" class="required"></label>
+        <div class="form-div">
+          <label for="address" class="required">Address line 2</label>
           <input type="address" id="address" name="address" placeholder="Address Line 2" required>
         </div>
 
 
-        <div>
-          <label for="city" class="required"></label>
+        <div class="form-div">
+          <label for="city" class="required">City</label>
           <input type="city" id="city" name="city" placeholder="city" required>
         </div>
 
 
-        <div>
-          <label for="state" class="required"></label>
+        <div class="form-div">
+          <label for="state" class="required">State</label>
           <input type="state" id="state" name="state" placeholder="state" required>
         </div>
 
 
-        <div>
-          <label for="postal-code" class="required"></label>
+        <div class="form-div">
+          <label for="postal-code" class="required">Postal Code</label>
           <input type="text" id="postal-code" name="postal-code" placeholder="postal code" required>
         </div>
 
 
-        <div>
-          <label for="country" class="required"></label>
+        <div class="form-div">
+          <label for="country" class="required">Country</label>
           <input type="country" id="country" name="country" placeholder="country" required>
         </div>
 
 
-        <div>
+        <div class="checkboxes form-div">
           <h5>Child's Sex</h5>
-          <input type="radio" id="male" name="male">
-          <label>Male</label>
+          <label class="radio"><input type="radio" id="male" name="male">Male</label>
 
-          <input type="radio" id="Female" name="Female">
-          <label>Female</label>
+          <label><input type="radio" id="male" name="male">Female</label>
 
-          <input type="radio" id="others" name="Others">
-          <label>Others</label>
+          <label><input type="radio" id="male" name="male">Others</label>
         </div>
 
 
-        <div>
+        <div class="form-div">
           <label for="country" class="required">Child's Date of Birth</label>
           <input type="date" id="date" name="date" placeholder="date" required>
         </div>
 
 
-        <div>
+        <div class="form-div">
 
-          <div>
+          <div class="checkboxes">
             <h5 class="required">Does your child have autiism diagnostics?</h5>
             
             <label>
@@ -182,7 +183,7 @@
           </div>
 
 
-          <div>
+          <div class="checkboxes">
             <h5 class="required">Is Your child in need of an autism assessment?</h5>
 
             <label>
@@ -198,42 +199,69 @@
         </div>
 
 
-        <div>
+        <div class="form-div">
           <label for="city" class="required"> Does your child have a diagnosis other than autism? If so, please specify:</label>
           <textarea type="message" id="message" name="message" placeholder="specify Details"></textarea>
         </div>
 
       
 
-        <button type="submit">Register</button>
+        <button type="submit" class="contact-button">Register</button>
       </form>
 
     </section>
 
 
 
+    <div class="click-container"> 
+      <h4 id="click">Click the arrow below to contact us</h4>
+    </div>
+    
+    <div class="contact-line-container">
+      <hr class="contact-line">
+      <i class="fa-solid fa-chevron-up" id="arrow"></i>
+      <i class="fa-solid fa-chevron-down" id="arrow-down"></i>
+      <hr class="contact-line">
+    </div>
 
-    <section>
+    
 
-      <h2>Contact us</h2>
 
-      <p>You can send us an email for more Inquiries</p>
+    
 
-      <form>
 
-        <div>
-          <label for="name" class="required">Name</label>
-          <input type="text" placeholder="Enter your full name" name="name" required>
+    <section class="contact-section">
+
+      <div id="contact-section">
+
+        <div  class="contact-section-text">
+
+          <h2>Contact us</h2>
+
+          <p>You can send us an email for more Inquiries</p>
+
         </div>
 
-        <div>
-          <label for="email" class="required">Email</label>
-          <input type="email" placeholder="Enter your Email address" name="email" required>
-        </div>
 
-        <div>
-          <label for="message" class="required">Message</label>
-          <textarea name="message" id="message" placeholder="message"></textarea>
+        <form>
+
+          <div class="form-div">
+            <label for="name" class="required">Name</label>
+            <input type="text" placeholder="Enter your full name" name="name" required>
+          </div>
+
+          <div class="form-div">
+            <label for="email" class="required">Email</label>
+            <input type="email" placeholder="Enter your Email address" name="email" required>
+          </div>
+
+          <div class="form-div">
+            <label for="message" class="required">Message</label>
+            <textarea name="message" id="message" placeholder="message"></textarea>
+          </div>
+
+          <button class="contact-button">Send</button>
+
         </div>
 
 
@@ -243,29 +271,26 @@
 
     </section>
 
-
-      
 
   </main>
 
 
 
-
-
-
-
-
-  <!-- Footer -->
+<!-- Footer -->
 
   <footer>
 
-    <img src="images/Rectangle yellow.png" alt="" height="72px" width="72px">
-
     <div>
 
-      <img src="./images/logo white.png" alt="">
+      <img src="images/Rectangle yellow.png" alt="" height="72px" width="72px" class="footer-rectangle">
 
-      <div>
+    </div>
+
+    <div class="first-column">
+
+      <img src="./images/logo_colored.png" alt="" class="logo">
+
+      <div class="icon-container">
 
         <div>
           <i class="fa-solid fa-house"></i>
@@ -274,25 +299,27 @@
 
 
         <div>
-          <i class="fa-solid fa-phone"></i>
-          <p>23 Petkelkuja sstreet, Abidoye lane, Fl, Finland</p>
+          <i class="fa-solid fa-phone" id="arrow"></i>
+          <p>358-789368-684</p>
         </div>
 
 
         <div>
           <i class="fa-solid fa-envelope"></i>
-          <p>23 Petkelkuja sstreet, Abidoye lane, Fl, Finland</p>
+          <p>hillaryrober@gmail.com</p>
         </div>
 
       </div>
 
     </div>
 
+    <hr class="line">
 
 
-    <div>
 
-      <div>
+    <div >
+
+      <div class="social">
 
         <i class="fa-brands fa-facebook"></i>
 
@@ -304,7 +331,7 @@
 
       </div>
 
-      <p>&copy; Copyrights @2024 | Hillary </p>
+      <p class="copy">&copy; Copyrights @2024 | Hillary </p>
 
     </div>
 
@@ -313,6 +340,6 @@
 
 
 
-  
+  <script src="childcare.js"></script>
 </body>
 </html>
