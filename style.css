@@ -133,12 +133,13 @@ li {
   display: flex;
   flex-direction: column;
   row-gap: 2rem;
+  
 }
 
 
 .title-text h1{
   font-size: 3rem;
-  line-height: 2;
+  line-height: 1.5;
 }
 
 
@@ -188,8 +189,8 @@ li {
   position: absolute;
   width: 48rem;
   height: auto;
-  right: -1rem;
-  top: 7.5rem;
+  right: 0rem;
+  top: 1.5rem;
   bottom: 100%;
 }
 
@@ -232,7 +233,7 @@ li {
   align-items: center;
   text-align: center;
   align-items: center;
-  padding: 2rem 18rem;
+  padding: 2rem 30%;
 }
 
 
@@ -931,6 +932,329 @@ footer .logo{
   justify-content: center;
   column-gap: 1rem;
 }
+
+
+/* Services Page */
+
+
+.services-section{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 4rem;
+  row-gap: 1rem;
+  padding: 4rem 6rem 8rem 6rem;
+  position: relative;
+}
+
+
+.service-container{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: space-between;
+  padding: 0 4rem;
+  margin-top: 2rem;
+}
+
+
+.services{
+  width: 45%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  column-gap: 4rem;
+  padding: 0rem 2rem;
+}
+
+
+.services img{
+  width: 100%;
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  text-align: center;
+}
+
+
+.service-text{
+  width: fit-content;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  padding-right: 35%;
+}
+
+
+.service-text h4{
+  color: #8f36ff;
+  margin-bottom: 1rem;
+}
+
+
+
+.series-blue{
+  width: 300px;
+  position: absolute;
+  left: -3rem;
+  top: 100%;
+}
+
+
+
+.solution-section{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 6rem 10rem 2rem 10rem;
+}
+
+
+.solution-tittle-text{
+  color: #8f36ff;
+}
+
+.solution-tittle-text p{
+  margin-bottom: 2rem;
+  padding: 2rem 10%;
+  line-height: 2;
+}
+
+
+
+.solution-main-container{
+  width: 100%;
+  height: auto;
+  
+}
+
+
+
+.solution-container{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 4rem 0;
+}
+
+
+
+
+.solution{
+  width: fit-content;
+  padding-right: 25%;
+  text-align: left;
+  
+}
+
+
+.solution2{
+
+  width: fit-content;
+  padding-left: 25%;
+  text-align: left;
+}
+
+
+.solution h2, .solution2 h2{
+  margin-bottom: 1rem;
+  color: #8f36ff;
+  font-weight: 500;
+}
+
+
+
+.solutions-img{
+  width: 50%;
+  position: relative;
+  
+}
+
+
+
+.solution-yellow1{
+  width: 400px;  
+  
+}
+
+
+
+.solution-yellow{
+  width: 12rem;
+  position: absolute;
+  right:-10%;
+  top: 50%;
+  z-index: -1;
+  transform: rotate(180deg);
+}
+
+.solution-list{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  list-style-type: disc;
+  padding-left: 2rem; 
+  
+  
+}
+
+.solution-list li{
+  list-style: disc;
+}
+
+
+
+
+
+
+/* Media query for responsiveness */
+
+@media (max-width: 768px) {
+  header nav {
+    flex-direction: column;
+    padding: 0 2rem;
+  }
+
+  nav img {
+    width: 40%;
+  }
+
+  
+  ul {
+    flex-direction: column;
+    width: 100%;
+    row-gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .nav-contact {
+    width: 100%;
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+
+  .nav-button {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .title-section {
+    flex-direction: column;
+    padding: 6rem 2rem;
+  }
+
+  .title-text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .title-text h1 {
+    font-size: 2rem;
+  }
+
+  .child-first-paragraph {
+    padding: 2rem 10%;
+  }
+
+  .child-first-image {
+    width: 300px;
+  }
+
+  .team-container {
+    padding: 6rem 2rem;
+  }
+
+  .about-container {
+    flex-direction: column;
+    padding: 2rem;
+    row-gap: 3rem;
+  }
+
+  .about-text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .family-paragraph {
+    padding: 2rem 10%;
+  }
+}
+
+/* Extra small screens (max-width: 480px) */
+@media (max-width: 480px) {
+  nav img {
+    width: 60%;
+  }
+
+  ul {
+    row-gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .title-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .title-button {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .child-first-paragraph {
+    padding: 1rem 5%;
+  }
+
+  .child-first-image {
+    width: 250px;
+  }
+
+  .team-container {
+    padding: 4rem 1rem;
+  }
+
+  .about-container {
+    padding: 1rem;
+  }
+
+  .family-paragraph {
+    padding: 1rem 5%;
+  }
+
+  .contact-button {
+    width: 80%;
+  }
+
+  footer {
+    padding: 2rem 1rem;
+  }
+}
+
+
+
 
 
 
