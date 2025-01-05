@@ -14,8 +14,6 @@ body{
 
 
 
-
-
 .required::after {
   content: " *";
   color: red;
@@ -32,6 +30,7 @@ header nav{
   margin-top: 1rem;
   padding: 0 6rem;
 }
+
 
 nav img{
   width: 25%;
@@ -1129,7 +1128,43 @@ footer .logo{
 
 /* Media query for responsiveness */
 
+/* For Larger Screens (min-width: 1200px) */
+@media (min-width: 1200px) { 
+
+  nav img {
+    width: 20%;
+  }
+
+  .nav-button {
+    font-size: 1.5rem;
+    padding: 0.75rem 2.5rem;
+  }
+
+  .title-section {
+    padding: 10rem 6rem;
+  }
+
+
+  .title-button {
+    font-size: 1.5rem;
+    padding: 0.75rem 2.5rem;
+  }
+
+
+  .child-first-image {
+    width: 500px;
+  }
+
+
+  .about-text {
+    width: 50%;
+  }
+
+}
+
+
 @media (max-width: 768px) {
+  
   header nav {
     flex-direction: column;
     padding: 0 2rem;
@@ -1139,7 +1174,7 @@ footer .logo{
     width: 40%;
   }
 
-  
+
   ul {
     flex-direction: column;
     width: 100%;
@@ -1175,6 +1210,16 @@ footer .logo{
   .title-text h1 {
     font-size: 2rem;
   }
+
+.title-man{
+  display: none;
+}
+
+
+.child-first div{
+  display: flex;
+  flex-direction: column;
+}
 
   .child-first-paragraph {
     padding: 2rem 10%;
